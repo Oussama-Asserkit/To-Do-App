@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link Icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <!-- Link Tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>To Do App</title>
+</head>
+<body class="bg-slate-200">
+    <!-- Section Header -->
+    <header>
+        <div class="mt-14 text-center">
+            <h1 class="text-6xl font-semibold text-blue-900">To Do List</h1>
+        </div>
+        <div class="new__task">
+            <div class="button__task">
+                <button class="all__tasks active">All Tasks <span id="numTask">0</span></button>
+            </div>
+            <div class="add__task px-5 py-3">
+                <button id="add_task">Add Task <i class="ri-add-line"></i></button>
+            </div>
+        </div>
+        <!-- Data task -->
+        <div id="data_task" class="data_task">
+            <div class="div__one">
+                <h1 class="font-bold text-blue-950">Add a New Task</h1>
+                <span class="text-5xl" id="close__data__task"><i class="ri-close-line"></i></span>
+            </div>
+            <div class="div__tow">
+                <input id="input_task" type="text" placeholder="Enter New Task">
+            </div>
+            <div class="div__three">
+                <input id="input_date" type="date" id="date">
+                <select id="input_select">
+                    <option value="To Do" selected>To Do</option>
+                    <option value="In progress">In progress</option>
+                    <option value="Completed">Completed</option>
+                </select>
+            </div>
+            <div class="div__foor">
+                <h6 class="Description">Description</h6>
+                <textarea id="input_textarea" placeholder="Description"></textarea>
+            </div>
+            <div class="div__five">
+                <button id="cannel" class="cannel">cannel</button>
+                <button id="create__task" class="create__task">Create Task</button>
+                <span class="bg-slate-300 rounded-sm p-2 text-center
+                    text-white font-semibold shadow-xl" id="show">Show <br> Button C ...</span>
+            </div>
+        </div>
+    </header>
+    <script src="script.js"></script>
+</body>
+</html>
