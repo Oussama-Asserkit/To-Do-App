@@ -104,6 +104,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    gap: 25px;
 }
 .div__three input[type="date"]{
     border: 1px solid #b0b0b052;
@@ -272,5 +273,56 @@
 
     .new__task .button__task{
         flex-direction: column;
+    }
+    .data_task {
+        width: 410px;
+        height: auto;
+        padding: 25px 15px ;
+    }
+}
+@media (max-width : 440px) {
+    .data_task {
+        width: 300px;
+        height: 350px;
+        overflow: scroll;
+        padding: 20px 10px;
+    }
+    .data_task .div__one h1 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    #close__data__task {
+        font-size: 30px;
+    }
+    .div__tow {
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    .div__tow input {
+        width: 80%;
+        margin-left: 36px;
+    }
+    .div__foor textarea {
+        width: 283px;
+        height: 200px;
+    }
+    .div__three{
+        flex-direction: column;
+    }
+}
+@media (max-width : 1187px) {
+    #content_value_task {
+        width: auto;
+        flex-wrap: wrap;
+        align-items: center;
+        row-gap: 40px;
+        column-gap: 25px;
+        margin: 0;
+    }
+}
+@media (min-width : 1200px){
+    body{
+        zoom: 1.1;
+        overflow: hidden;
     }
 }
